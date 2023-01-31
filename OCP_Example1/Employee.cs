@@ -8,7 +8,7 @@ namespace OCP_Example1
 {
     public abstract class Employee
     {
-        private static int idCounter = 0;
+        private static int idCounter;
         public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -32,5 +32,4 @@ namespace OCP_Example1
                 $"The Employee with Id: {ID}, First name: {FirstName} , Last name: {LastName}, the Deparment: {Department}, has a salary of {Salary}";
         }
     }
-
 }

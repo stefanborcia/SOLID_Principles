@@ -8,10 +8,7 @@ namespace OCP_Example1
 {
     public class Security : Employee
     {
-        public Security(string firstName, string lastName, string department, int salary) : base(firstName, lastName, department, salary)
-        {
-
-        }
+        public Security(string firstName, string lastName, string department, int salary) : base(firstName, lastName, department, salary) { }
 
         public void GuardDoor()
         {
@@ -22,10 +19,11 @@ namespace OCP_Example1
         {
             Console.WriteLine("Checking the reservation");
         }
+
         public override void PerformDuties()
         {
-           GuardDoor();
-           CheckReservation();
+            GuardDoor();
+            CheckReservation();
         }
     }
 }

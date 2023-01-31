@@ -14,9 +14,5 @@ namespace OCP_Example1
         {
             employee.PerformDuties();
         }
-
-       
-
-       
     }
 }

@@ -8,10 +8,8 @@ namespace OCP_Example1
 {
     public  class Chef : Employee
     {
-        public Chef(string firstName, string lastName, string department, int salary) : base(firstName, lastName, department, salary)
-        {
+        public Chef(string firstName, string lastName, string department, int salary) : base(firstName, lastName, department, salary) { }
 
-        }
         public void CookFood()
         {
             Console.WriteLine("Cooking food");
@@ -21,6 +19,7 @@ namespace OCP_Example1
         {
             Console.WriteLine("Designing the plates");
         }
+
         public void CutMeatChops()
         {
             Console.WriteLine("Cutting the meat");
