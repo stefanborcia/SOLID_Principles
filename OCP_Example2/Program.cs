@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,8 +15,17 @@ namespace OCP_Example2
 
             Shape square = new Square(4);
 
-            Console.WriteLine($"Area of rectangle is: {rectangle.GetShapeArea()}");
-            Console.WriteLine($"Area of square is: {square.GetShapeArea()}");
+            Shape circle = new Circle(6);
+
+            Console.WriteLine("An application which calculate the area of a shape\n");
+
+            Console.WriteLine($"Area of a rectangle is: {rectangle.GetShapeArea()}");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine($"Area of a square is: {square.GetShapeArea()}");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine($"Area of a circle is: {circle.GetShapeArea()}");
+
+
 
             Console.ReadKey();
         }
